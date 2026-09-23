@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ecommerce": "npx playwright test --grep @ecommerce"
+    "ecommerce": "npx playwright test --grep @ecommerce",
+    "apiEventHub": "npx playwright test --grep @APIEventHub",
+    "customFixture": "npx playwright test --grep @customFixture"
   },
   "keywords": [],
   "author": "",
