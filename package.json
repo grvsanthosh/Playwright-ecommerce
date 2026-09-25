@@ -7,7 +7,9 @@
     "ecommerce": "npx playwright test --grep @ecommerce",
     "apiEventHub": "npx playwright test --grep @APIEventHub",
     "customFixture": "npx playwright test --grep @customFixture",
-    "storageState": "npx playwright test --grep @storageState"
+    "storageState": "npx playwright test --grep @storageState",
+    "networkDetailPage": "npx playwright test --grep \"(?=.*@network)(?=.*@orderDetail)\"",
+    "networkOrderPage": "npx playwright test --grep \"(?=.*@network)(?=.*@orderPage)\""
   },
   "keywords": [],
   "author": "",
