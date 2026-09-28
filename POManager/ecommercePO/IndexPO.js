@@ -4,7 +4,7 @@ import { PlaceOrderPO } from "./PlaceOrderPO.js"
 import { OrderValidatorPO } from "./OrderValidatorPO.js"
 
 export class IndexPO {
-    constructor(page, data) {
+    constructor(page,data) {
         this.page = page;
         this.data = data;
         this.loginPagePO = new LoginPagePO(this.page)
@@ -14,6 +14,7 @@ export class IndexPO {
         this.orderId = null;
     }
     async userLogin() {
+        
         await this.loginPagePO.loginAction(this.data);
         await this.loginPagePO.loginValidation();
 
