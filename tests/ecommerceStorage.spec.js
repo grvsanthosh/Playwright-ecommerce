@@ -18,5 +18,5 @@ test("@storageState testing", async () => {
     const page = await newLoginContext.newPage();
     await page.goto("https://rahulshettyacademy.com/client/#/dashboard/dash")
     await page.locator("[routerlink*=myorders]").click();
-    await expect(page.getByText("6ab37f972be7a4bc2b653e48")).toBeVisible();
+    await expect(page.getByText("Your Orders")).toBeVisible();
 })

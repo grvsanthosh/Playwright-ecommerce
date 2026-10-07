@@ -6,7 +6,7 @@ export const customTest = test.extend({
         const product = page.locator("div.product").first()
         await product.waitFor();
         expect(product).toBeVisible();
-        await page.locator("div.product",{hasText:""}).getByText('ADD TO CART').click();
+        await page.locator("div.product",{hasText:"Brocolli"}).getByText('ADD TO CART').click();
         await use(page);
     },
     credentials:{
