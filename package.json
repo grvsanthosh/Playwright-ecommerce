@@ -9,13 +9,16 @@
     "customFixture": "npx playwright test --grep @customFixture",
     "storageState": "npx playwright test --grep @storageState",
     "networkDetailPage": "npx playwright test --grep \"(?=.*@network)(?=.*@orderDetail)\"",
-    "networkOrderPage": "npx playwright test --grep \"(?=.*@network)(?=.*@orderPage)\""
+    "networkOrderPage": "npx playwright test --grep \"(?=.*@network)(?=.*@orderPage)\"",
+    "cucumber": "npx cucumber-js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@azure/identity": "^4.13.3",
+    "@azure/playwright": "^1.1.6",
     "@playwright/test": "^1.63.0",
     "@types/node": "^26.5.1"
   },
