@@ -5,6 +5,7 @@ export class LoginPagePO {
         this.page = page;
         this.userName = this.page.locator("#userEmail");
         this.password = this.page.locator("#userPassword");
+        //fixing login locator
         this.loginBtn = this.page.locator("#login")
         this.loginValidate = this.page.getByText("Login Successfully")
     }
