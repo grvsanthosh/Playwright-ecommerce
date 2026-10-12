@@ -5,7 +5,8 @@ export class LoginPagePO {
         this.page = page;
         this.userName = this.page.locator("#userEmail");
         this.password = this.page.locator("#userPassword");
-        this.loginBtn = this.page.locator("#login")
+        //fixing login locator
+        this.loginBtn = this.page.locator("#logins")
         this.loginValidate = this.page.getByText("Login Successfully")
     }
     async loginAction(data){
